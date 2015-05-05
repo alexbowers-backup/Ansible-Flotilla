@@ -18,6 +18,9 @@
     # Force locale
     - include: tasks/locale.yml
 
+    # Force Timezone
+    - include: tasks/timezone.yml
+
     # Install vim
     - include: tasks/vim.yml
 
