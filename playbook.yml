@@ -8,3 +8,9 @@
 
     # Write MOTD File
     - include: tasks/motd.yml
+
+    # Update the PHP PPA Repository in Ubutntu to PHP 5.6
+    - include: tasks/php-ppa-5.6-update.yml
+
+    # Run apt-get update
+    - include: tasks/apt-update.yml
