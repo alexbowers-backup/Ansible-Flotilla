@@ -14,3 +14,5 @@
 
     # Run apt-get update
     - include: tasks/apt-update.yml
+    # Install git
+    - include: tasks/git.yml
