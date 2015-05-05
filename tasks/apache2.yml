@@ -1,0 +1,11 @@
+---
+# Install apache2
+- name: Install apache2
+  apt: name=apache2 state=present
+
+# Install PHP's module for apache2
+- name: Install PHP Module for apache2
+  apt: name=libapache2-mod-php5 state=present
+
+# Restart Apache2
+  notify: restart apache

@@ -39,5 +39,12 @@
     # Update Some PHP CLI Settings
     - include: tasks/php-cli-settings.yml
 
+    # Install apache2
+    - include: tasks/apache2.yml
+
     # Install Composer
     - include: tasks/composer.yml
+
+  handlers:
+    # Restart apache
+    - include: handlers/restart-apache.yml
