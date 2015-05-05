@@ -1,0 +1,19 @@
+---
+# Install PHP & Some Extensions
+- name: Install PHP & Extensions
+  apt: name={{ item }} state=present
+  with_items:
+    - "php5-cli"
+    - "php5-dev"
+    - "php-pear"
+    - "php5-mysqlnd"
+    - "php5-pgsql"
+    - "php5-sqlite"
+    - "php5-apcu"
+    - "php5-json"
+    - "php5-curl"
+    - "php5-gd"
+    - "php5-gmp"
+    - "php5-imap"
+    - "php5-mcrypt"
+    - "php5-memcached"

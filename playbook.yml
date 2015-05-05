@@ -20,3 +20,6 @@
 
     # Install git
     - include: tasks/git.yml
+
+    # Install PHP & Extensions
+    - include: tasks/php.yml
