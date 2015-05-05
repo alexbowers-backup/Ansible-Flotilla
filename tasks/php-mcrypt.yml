@@ -1,0 +1,4 @@
+---
+# Enable PHP mcrypt extension
+- name: Enable PHP mcrypt extension
+  file: src=/etc/php5/mods-available/mcrypt.ini dest=/etc/php5/cli/conf.d/20-mcrypt.ini state=link force=yes

@@ -23,3 +23,6 @@
 
     # Install PHP & Extensions
     - include: tasks/php.yml
+
+    # Enable PHP mcrypt extension
+    - include: tasks/php-mcrypt.yml
