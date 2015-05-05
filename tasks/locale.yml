@@ -1,0 +1,7 @@
+---
+# Force Locale to be
+- name: force locale
+  template: src=../templates/locale.j2 dest=/etc/default/locale
+
+- name: locale gen
+  locale_gen: name=en_GB.UTF-8 state=present

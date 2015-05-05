@@ -15,6 +15,9 @@
     # Run apt-get update
     - include: tasks/apt-update.yml
 
+    # Force locale
+    - include: tasks/locale.yml
+
     # Install vim
     - include: tasks/vim.yml
 
