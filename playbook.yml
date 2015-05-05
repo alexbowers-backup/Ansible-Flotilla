@@ -36,5 +36,8 @@
     # Enable PHP mcrypt extension
     - include: tasks/php-mcrypt.yml
 
+    # Update Some PHP CLI Settings
+    - include: tasks/php-cli-settings.yml
+
     # Install Composer
     - include: tasks/composer.yml

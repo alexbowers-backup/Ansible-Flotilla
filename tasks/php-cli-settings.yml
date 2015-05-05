@@ -1,0 +1,43 @@
+---
+# Update PHP CLI Settings
+- name: Set PHP error_reporting to E_ALL
+  ini_file: dest=/etc/php5/cli/php.ini
+            section=PHP
+            option=error_reporting
+            value=E_ALL
+            backup=yes
+
+- name: Set PHP display_errors to On
+  ini_file: dest=/etc/php5/cli/php.ini
+              section=PHP
+              option=display_errors
+              value=On
+              backup=yes
+
+- name: Set PHP memory_limit to 512M
+  ini_file: dest=/etc/php5/cli/php.ini
+              section=PHP
+              option=memory_limit
+              value=512M
+              backup=yes
+              
+- name: Set PHP upload_max_filesize to 215M
+  ini_file: dest=/etc/php5/cli/php.ini
+              section=PHP
+              option=upload_max_filesize
+              value=216M
+              backup=yes
+              
+- name: Set PHP post_max_size to 64M
+  ini_file: dest=/etc/php5/cli/php.ini
+              section=PHP
+              option=post_max_size
+              value=64M
+              backup=yes
+              
+- name: Set PHP date.timezone to UTC
+  ini_file: dest=/etc/php5/cli/php.ini
+              section=PHP
+              option=date.timezone
+              value=UTC
+              backup=yes
