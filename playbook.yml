@@ -21,6 +21,9 @@
     # Install git
     - include: tasks/git.yml
 
+    # Install curl
+    - include: tasks/curl.yml
+
     # Install PHP & Extensions
     - include: tasks/php.yml
 
