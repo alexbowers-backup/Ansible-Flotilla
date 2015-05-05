@@ -1,0 +1,4 @@
+---
+# Ping the server to continue that it is alive.
+- name: Verify server is alive
+  action: ping

@@ -1,0 +1,4 @@
+---
+# Setup the MOTD file on the server.
+
+- template: src=../templates/motd.j2 dest=/etc/motd

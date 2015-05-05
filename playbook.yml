@@ -1,0 +1,10 @@
+---
+- hosts: digitalocean
+  sudo: true
+  user: root
+  tasks:
+    # Ping server
+    - include: tasks/ping.yml
+
+    # Write MOTD File
+    - include: tasks/motd.yml
