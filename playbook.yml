@@ -29,3 +29,6 @@
 
     # Enable PHP mcrypt extension
     - include: tasks/php-mcrypt.yml
+
+    # Install Composer
+    - include: tasks/composer.yml
