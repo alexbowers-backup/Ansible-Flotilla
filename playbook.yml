@@ -14,5 +14,9 @@
 
     # Run apt-get update
     - include: tasks/apt-update.yml
+
+    # Install vim
+    - include: tasks/vim.yml
+
     # Install git
     - include: tasks/git.yml
