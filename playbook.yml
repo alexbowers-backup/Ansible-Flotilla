@@ -45,6 +45,9 @@
     # Install Composer
     - include: tasks/composer.yml
 
+    # Install MySQL 5.6
+    - include: tasks/mysql-5.6.yml
+
   handlers:
     # Restart apache
     - include: handlers/restart-apache.yml
